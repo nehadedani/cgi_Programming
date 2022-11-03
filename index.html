@@ -1,0 +1,31 @@
+<!--
+#Name:         Neha Dedani
+#Class:        CS 4720
+#Term:         Summer 2022
+#Instructor :  Dr. North
+Assignment:   Assignment 5
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>assignment 5</title>
+<script src = "a5.js"></script>
+</head>
+<body>
+<h1>Welcome to Assignment 5</h1>
+<form action="/cgi-bin/form.py" method="post" target="_blank">
+    <h3> Shipping Information: </h3>
+    Name: <br> <input type="text" name="shippingName" id="shippingName"> <br>
+    Zip code: <br> <input type="number" name="shippingZip" id="shippingZip"> <br> <br>
+
+    <h3> Billing Information:</h3>
+    <input type="checkbox" name="sameBox" id="sameBox" onchange="same()"> Same as Shipping <br>
+    Name: <br> <input type="text" name="billingName" id="billingName"> <br>
+    Zip code: <br> <input type="number" name="billingZip" id="billingZip">
+
+    <br> <br><button type="submit"> Submit </button>
+</form>
+</body>
+</html>
